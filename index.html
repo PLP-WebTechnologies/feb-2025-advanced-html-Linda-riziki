@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Join Us Today!</h1>
+            <p>Register now to unlock exclusive benefits, stay updated with the latest news, and connect with a vibrant community.<br> It only takes a few moments to sign up and start enjoying personalized experiences! </p>
+        </div>
+        
+        <section class="list">
+            <h3>Why Register?</h3>
+            <ol type="i">
+                <li> Get exclusive access to premium feature </li>
+                <li> Stay updated with the latest news and offers</li>
+                <li>Easily manage your account and preferences</li>
+                <li>Connect with a community of like-minded individuals</li>
+                <li>Enjoy personalized recommendations</li>
+            </ol>
+        </section>
+        <div>
+            <img src="https://images.pexels.com/photos/7172987/pexels-photo-7172987.jpeg?auto=compress&cs=tinysrgb&w=600" alt="A woman smiling with a laptop" width="350px" height="350px">
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St, NY</td>
+                    <td>+1 234 567 8901</td>
+                    <td>john@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Elm St, CA</td>
+                    <td>+1 987 654 3210</td>
+                    <td>jane@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>789 Oak St, TX</td>
+                    <td>+1 555 678 9012</td>
+                    <td>michael@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Lisa White</td>
+                    <td>321 Pine St, FL</td>
+                    <td>+1 444 123 5678</td>
+                    <td>lisa@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>David Wilson</td>
+                    <td>654 Cedar St, WA</td>
+                    <td>+1 333 987 6543</td>
+                    <td>david@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+        <section>
+            <form action="submit.php" method="post">
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text"  id="name" name="name" required placeholder="Enter Name"><br><br>
+    
+                     <!-- Email Field (Required & Valid Format) -->
+                    <label for="email">Email:</label>
+                    <input type="email"  id="email" name="email" required placeholder="Enter Email"><br><br>
+    
+                    <!-- Password (Required, minimum of 6 Characters) -->
+                    <label for="password">Password:</label>
+                    <input type="password"  id="password" name="password" pattern=".{6,}" required placeholder="Enter password"><br><br>
+
+                </fieldset>
+                
+                <fieldset>
+                    <!-- Dropdown (Required) -->
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="choose">Choose country</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="S.A">South Africa</option>
+                        <option value="rwanda">Rwanda</option>
+                    </select><br><br>
+                
+                    <div class="radio-checkbox-group">
+                        <p><strong>Gender:</strong></p>
+                        <input type="radio" class="select" id="male" name="gender" value="male" required placeholder="">
+                        <label for="male">Male</label><br><br>
+        
+                        
+                        <input type="radio" class="select" id="female" name="gender" value="female" required placeholder="">
+                        <label for="female">Female</label><br><br>
+    
+                        <input type="radio" class="select" id="other" name="gender" value="other" required placeholder="">
+                        <label for="other">Other</label><br><br>
+                    </div>
+                    
+<div class="radio-checkbox-group">
+    <p><strong>Interests:</strong></p>
+    <input type="checkbox" class="select" id="Sports" name="interests" value="Sports" required placeholder="">
+    <label for="Sports">Sports</label><br><br>
+
+    
+    <input type="checkbox" class="select" id="music" name="interests" value="music" required placeholder="">
+    <label for="music">Music</label><br><br>
+
+    
+    <input type="checkbox" class="select" id="technology" name="interests" value="technology" required placeholder="">
+    <label for="technology">Technology</label><br><br>
+
+   
+    <input type="checkbox" class="select" id="travel" name="interests" value="travel" required placeholder="">
+    <label for="travel">Travel</label><br><br>
+
+</div>
+                
+                <!-- Submit Button -->
+             <button type="submit">Register</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
